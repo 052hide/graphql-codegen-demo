@@ -1,0 +1,15 @@
+schema: ./schema.graphql
+generates:
+  ./generates/server.ts:
+    plugins:
+      - typescript-common
+      - typescript-server
+  ./generates/resolver.ts:
+    plugins:
+      - typescript-common
+      - typescript-resolvers
+  ./generates/components.tsx:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
